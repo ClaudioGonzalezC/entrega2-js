@@ -127,21 +127,18 @@ function filtrarComprasPorMontoMinimo(compras, montoMinimo) {
 presupuesto.nombre = registrarNombrePresupuesto();
 if (!presupuesto.nombre) {
     console.log('Registro cancelado');
-    return;
 }
 
 // Registrar el simbolo de la moneda
 presupuesto.simboloMoneda = registrarSimboloMoneda();
 if (!presupuesto.simboloMoneda) {
     console.log('Registro cancelado');
-    return;
 }
 
 // Registrar el monto total del presupuesto
 presupuesto.montoTotal = registrarMontoTotal();
 if (!presupuesto.montoTotal) {
     console.log('Registro cancelado');
-    return;
 }
 
 alert('¡Monto ingresado en ' + presupuesto.nombre + '! Tu presupuesto inicial es de: ' + presupuesto.simboloMoneda + presupuesto.montoTotal);
